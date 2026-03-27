@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+    <title>Student Registration System</title>
+</head>
+
+<body>
+    <header>
+        Student Registration System
+    </header>
+    <main class="container">
+        <form class="student-form" id="studentForm">
+
+            <div class="form-group">
+                <label>Student Name</label>
+                <input type="text" id="name" required pattern="[A-Za-z ]+" title="Only letters allowed" />
+
+
+
+            </div>
+
+            <div class="form-group">
+                <label>Student ID</label>
+                <input type="number" id="studentId" required pattern="[0-9]+" title="Only numbers allowed" />
+
+            </div>
+
+            <div class="form-group">
+                <label>Email ID</label>
+                <input type="email" id="email" required />
+
+            </div>
+
+            <div class="form-group">
+                <label>Contact Number</label>
+                <input type="tel" id="contact" required maxlength="10" pattern="[0-9]{10}"
+                    title="Enter exactly 10 digits" />
+            </div>
+
+            <button type="submit" id="submitBtn">Register Student</button>
+
+        </form>
+
+        <!-- RIGHT SIDE DISPLAY -->
+        <div class="output" id="outputBox">
+    <h3>Student List</h3>
+
+    <div class="table-container"> <!-- 👈 ADD THIS -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>ID</th>
+                    <th>Email</th>
+                    <th>Contact</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="studentList"></tbody>
+        </table>
+    </div>
+</div>
+        </div>
+    </main>
+    <footer>
+        @ Developed by Parjani Sangvikar
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>
