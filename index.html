@@ -9,17 +9,18 @@
 </head>
 
 <body>
+    <!-- Header for the Student Registration System -->
     <header>
         Student Registration System
     </header>
     <main class="container">
+
+        <!-- Form section for the registration -->
         <form class="student-form" id="studentForm">
 
             <div class="form-group">
                 <label>Student Name</label>
                 <input type="text" id="name" required pattern="[A-Za-z ]+" title="Only letters allowed" />
-
-
 
             </div>
 
@@ -45,25 +46,25 @@
 
         </form>
 
-        <!-- RIGHT SIDE DISPLAY -->
+        <!-- Registered Student List -->
         <div class="output" id="outputBox">
-    <h3>Student List</h3>
+            <h3>Student List</h3>
 
-    <div class="table-container"> <!-- 👈 ADD THIS -->
-        <table>
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>ID</th>
-                    <th>Email</th>
-                    <th>Contact</th>
-                    <th>Actions</th>
-                </tr>
-            </thead>
-            <tbody id="studentList"></tbody>
-        </table>
-    </div>
-</div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>ID</th>
+                            <th>Email</th>
+                            <th>Contact</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="studentList"></tbody>
+                </table>
+            </div>
+        </div>
         </div>
     </main>
     <footer>
